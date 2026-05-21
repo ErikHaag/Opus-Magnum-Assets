@@ -1,0 +1,12 @@
+:root {
+    --OMA-S-default-color: #fefefe;
+
+    --OMA-S-aerolith--complicated-elements: hsl(50, 100%, 60%);
+    --OMA-S-ignistal--complicated-elements: hsl(30, 100%, 50%);
+    --OMA-S-mistaline--complicated-elements: hsl(160, 100%, 40%);
+    --OMA-S-pyrolite--complicated-elements: hsl(0, 100%, 40%);
+    --OMA-S-terramarine--complicated-elements: hsl(110, 100%, 40%);
+    --OMA-S-vaprorine--complicated-elements: hsl(280, 100%, 60%);
+
+    --OMA-S-repeat--opus-magnum: #222;
+}

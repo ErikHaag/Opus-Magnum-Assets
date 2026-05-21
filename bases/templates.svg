@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g id="OMA_B_aether__unstable_elements">
+        <circle cx="30" cy="28" r="10" fill="var(--OMA-BC-aether-red--unstable-elements)" />
+        <circle cx="30" cy="38" r="15" fill="var(--OMA-BC-aether-cyan--unstable-elements)" />
+        <path d="M 20,40 c 10,15,5,15,0,10 s -15,-10,-10,-25 s 15,-4,15,0 s -10,7.5,-5,15" fill="var(--OMA-BC-aether-magenta--unstable-elements)" />
+
+    </g>
+    <g id="OMA_B_chromium__metal_quintessence">
+        <path d="M 22.91 35.11 C 21.23 31.56 23.34 23.92 27.07 23.29 S 35.9 23.73 38.02 29.82 S 37.71 39.83 33.79 40.64 S 24.96 40.77 22.91 35.11" fill="var(--OMA-B-gold--opus-magnum)" />
+        <path d="M 28.04 38.97 C 28.54 36.3 39.86 34.24 41.48 38.72 S 37.93 55.32 35.69 55.38 S 27.65 41.55 28.04 38.97" fill="var(--OMA-BC-chromium-blue--metal-quintessence)" />
+        <path d="M 44.07 37.36 C 45.02 35.21 54.23 34.04 55.4 36.08 S 48.925 51.315 45.793 52.333 S 43.642 38.938 44.07 37.36" fill="var(--OMA-BC-chromium-green--metal-quintessence)" />
+        <path d="M 14.91 44.52 C 23.94 41.84 22.51 47.94 26.11 51.86 S 26.8 57.59 22.94 55.41 S 11.24 45.77 14.91 44.58" fill="var(--OMA-BC-chromium-red--metal-quintessence)" />
+        <path d="M 8.41 41.48 C 7.48 35.14 10.19 28.35 13.86 24.68 S 20.41 26.04 19.13 31.06 S 17.92 39.87 16.66 43.67 S 8.97 47.58 8.47 41.55" fill="var(--OMA-BC-chromium-red-orange--metal-quintessence)" />
+    </g>
+    <g id="OMA_B_quintessence__opus_magnum">
+        <circle cx="24" cy="42" r="12" fill="var(--OMA-B-fire--opus-magnum)" />
+        <circle cx="42" cy="42" r="9" fill="var(--OMA-B-water--opus-magnum)" />
+        <circle cx="30" cy="33" r="12" fill="var(--OMA-B-earth--opus-magnum)" />
+        <circle cx="33" cy="42" r="9" fill="var(--OMA-B-air--opus-magnum)" />
+    </g>
+</svg>

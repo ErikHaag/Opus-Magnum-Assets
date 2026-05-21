@@ -1,0 +1,12 @@
+/* mode 0 or mode 1 requires these */
+
+.OMA-S {
+    * {
+        fill: none;
+        stroke: var(--OMA-S-default-color);
+    }
+
+    *.fill {
+        fill: var(--OMA-S-default-color);
+    }
+}

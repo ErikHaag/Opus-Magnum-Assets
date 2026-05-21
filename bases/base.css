@@ -1,0 +1,76 @@
+:root {
+    --OMA-B-vitae--opus-magnum: #fcc;
+    --OMA-B-mors--opus-magnum: #000;
+    --OMA-B-red-vitae--true-animismus: #faa;
+    --OMA-B-grey-mors--true-animismus: #555;
+    --OMA-B-true-vitae--true-animismus: #f88;
+    --OMA-B-true-mors--true-animismus: #310;
+    --OMA-B-tenebrivex--alchemical-inversions: #708;
+    
+    --OMA-B-salt--opus-magnum: #dcb;
+    --OMA-B-air--opus-magnum: #9cf;
+    --OMA-B-earth--opus-magnum: #5b5;
+    --OMA-B-fire--opus-magnum: #e43;
+    --OMA-B-water--opus-magnum: #3dd;
+
+    --OMA-B-aerolith--complicated-elements: #665;
+    --OMA-B-ignistal--complicated-elements: #655;
+    --OMA-B-mistaline--complicated-elements: #556;
+    --OMA-B-pyrolite--complicated-elements: #645;
+    --OMA-B-terramarine--complicated-elements: #565;
+    --OMA-B-vaprorine--complicated-elements: #656;
+    
+    --OMA-B-quintessence--opus-magnum: #000;
+    --OMA-B-aether--unstable-elements: #000;
+    --OMA-BC-aether-red--unstable-elements: #c00;
+    --OMA-BC-aether-cyan--unstable-elements: #7ca;
+    --OMA-BC-aether-magenta--unstable-elements: #f0f;
+
+    --OMA-B-quicksilver--opus-magnum: #ccc;
+    --OMA-B-quickcopper--halving-metallurgy: #e96;
+    --OMA-B-quicklime--halving-metallurgy: #ddc;
+    --OMA-B-anti-gold--alchemical-inversions: #44c;
+    --OMA-B-anti-silver--alchemical-inversions: #d40;
+    --OMA-B-anti-copper--alchemical-inversions: #0cc;
+    --OMA-B-anti-iron--alchemical-inversions: #4d7;
+    --OMA-B-anti-tin--alchemical-inversions: #e0a;
+    --OMA-B-anti-lead--alchemical-inversions: #e80;
+    --OMA-B-yttrium--alchemical-inversions: #80a;
+
+    --OMA-B-vaca--vacancy: #111;
+    --OMA-B-beryl--halving-metallurgy: #ed1351;
+    --OMA-B-lead--opus-magnum: #455;
+    --OMA-B-wolfram--halving-metallurgy: #557;
+    --OMA-B-tin--opus-magnum: #665;
+    --OMA-B-vulcan--halving-metallurgy: #e96315;
+    --OMA-B-iron--opus-magnum: #843;
+    --OMA-B-nickel--halving-metallurgy: #a3a28b;
+    --OMA-B-copper--opus-magnum: #d62;
+    --OMA-B-zinc--halving-metallurgy: #5d75a5;
+    --OMA-B-silver--opus-magnum: #888;
+    --OMA-B-sednum--halving-metallurgy: #de17de;
+    --OMA-B-gold--opus-magnum: #ed3;
+    --OMA-B-osmium--halving-metallurgy: #639;
+    --OMA-B-uranium--unstable-elements: #151;
+    --OMA-B-chromium--metal-quintessence: #777;
+    --OMA-BC-chromium-red-orange--metal-quintessence: #e30;
+    --OMA-BC-chromium-red--metal-quintessence: #e00;
+    --OMA-BC-chromium-blue--metal-quintessence: #77c;
+    --OMA-BC-chromium-green--metal-quintessence: #7a7;
+
+    --OMA-B-nobilis--noble-elements: var(--OMA-B-salt--opus-magnum);
+    --OMA-B-alpha--noble-elements: #c77;
+    --OMA-B-beta--noble-elements: #7c7;
+    --OMA-B-gamma--noble-elements: #7ac;
+    
+    --OMA-B-azulum--neuvolics: #2e4980;
+    --OMA-B-frixon--neuvolics: #b0a881;
+    --OMA-B-gelaron--neuvolics: #78a0aa;
+    --OMA-B-hestium--neuvolics: #8a9096;
+    --OMA-B-iridium--neuvolics: #7a3a89;
+    --OMA-B-mitrum--neuvolics: #444;
+    --OMA-B-taceum--neuvolics: #6e774f;
+    --OMA-B-zephiron--neuvolics: #8d6197;
+
+    --OMA-B-repeat--opus-magnum: #626459;
+}
