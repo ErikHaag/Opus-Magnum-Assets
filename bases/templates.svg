@@ -12,6 +12,9 @@
         <path d="M 14.91 44.52 C 23.94 41.84 22.51 47.94 26.11 51.86 S 26.8 57.59 22.94 55.41 S 11.24 45.77 14.91 44.58" fill="var(--OMA-BC-chromium-red--metal-quintessence)" />
         <path d="M 8.41 41.48 C 7.48 35.14 10.19 28.35 13.86 24.68 S 20.41 26.04 19.13 31.06 S 17.92 39.87 16.66 43.67 S 8.97 47.58 8.47 41.55" fill="var(--OMA-BC-chromium-red-orange--metal-quintessence)" />
     </g>
+    <g id="OMA_B_primae__prima_materia">
+        <path d="M 10 45 a 25 25 0 0 0 40 0 a 20 20 0 1 0 -40 0 " fill="var(--OMA-BC-primae-purple--prima-materia)" />
+    </g>
     <g id="OMA_B_quintessence__opus_magnum">
         <circle cx="24" cy="42" r="12" fill="var(--OMA-B-fire--opus-magnum)" />
         <circle cx="42" cy="42" r="9" fill="var(--OMA-B-water--opus-magnum)" />

@@ -51,7 +51,7 @@ function atomMerge(destinationElement, symbolsElement, basesElement, options = {
         let name = symbols.shift();
         let atom = document.createElementNS("http://www.w3.org/2000/svg", "g");
         destinationElement.appendChild(atom);
-        atom.id = `OMA-A-${name}`;
+        atom.id = `OMA_A_${name}`;
         if (mode >= 1) {
             let baseSrc = basesElement.querySelector(`:scope #OMA_B_${name}`);
             for (let c of baseSrc.children) {

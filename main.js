@@ -16,7 +16,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     let grid = document.getElementById("grid");
     let i = 0n;
     let j = 0n;
+    let filter = [];
+
     for (let elem of atomDestination.children) {
+        if (filter.length) {
+            let s = false;
+            for (let f of filter) {
+                if (elem.id.includes(f)) {
+                    s = true;
+                    break;    
+                }
+            }
+            if (!s) {
+                continue;
+            }
+        }
         let T = `translate(${70n * i}, ${70n * j})`;
         let useElem = document.createElementNS("http://www.w3.org/2000/svg", "use");
         grid.appendChild(useElem);
