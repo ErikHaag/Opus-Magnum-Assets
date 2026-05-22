@@ -70,11 +70,6 @@
     --OMA-B-sulfur--prima-materia: #dd8;
     --OMA-B-primae--prima-materia: #000;
     --OMA-BC-primae-purple--prima-materia: #a3a;
-    --OMA-B-zinc--prima-materia: #686;
-    --OMA-B-nickel--prima-materia: #858;
-    --OMA-B-bismuth--prima-materia: #69b;
-    --OMA-B-cobalt--prima-materia: #66a;
-    --OMA-B-platinum--prima-materia: #8888a7;
 
     --OMA-B-grey-mors--true-animismus: #555;
     --OMA-B-red-vitae--true-animismus: #faa;
@@ -85,6 +80,11 @@
     --OMA-B-lux--uncommon-primes: #ed4;
     --OMA-B-obscurum--uncommon-primes: #79d;
     --OMA-B-pax--uncommon-primes: #077;
+    --OMA-B-zinc--uncommon-primes: #686;
+    --OMA-B-nickel--uncommon-primes: #858;
+    --OMA-B-bismuth--uncommon-primes: #69b;
+    --OMA-B-cobalt--uncommon-primes: #66a;
+    --OMA-B-platinum--uncommon-primes: #8888a7;
 
     --OMA-B-aether--unstable-elements: #000;
     --OMA-BC-aether-red--unstable-elements: #c00;

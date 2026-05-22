@@ -52,14 +52,14 @@
     <g id="OMA_S_beta__noble_elements">
         <path d="M 24 50 v -30 q 0 -10 5 -10 a 7 7 0 0 1 0 14 7 7 0 0 1 0 14" stroke-width="3" />
     </g>
-    <g id="OMA_S_bismuth__prima_materia">
+    <g id="OMA_S_bismuth__uncommon_primes">
         <path d="M 15 10 a 30 20 -10 0 1 -2.5 25 h 35 a 30 20 10 0 1 -2.5 -25 M 30 22.5 v 27.5" stroke-width="3" />
     </g>
     <g id="OMA_S_chromium__metal_quintessence">
         <path d="M 15 27 a 10 10 0 1 1 10 10 M 21 37 h 19 M 35 16 q 3 -3 5 -3 t 5 3 M 40 13 v 38 M 36 47 h 8" stroke-width="3" />
         <circle cx="25" cy="27" r="1" class="fill" stroke-width="3" />
     </g>
-    <g id="OMA_S_cobalt__prima_materia">
+    <g id="OMA_S_cobalt__uncommon_primes">
         <path d="M 17 50 a 13 13 0 0 1 26 -0 M 30 10 a 13.5 13.5 0 0 0 0 27 a 13.5 13.5 0 0 0 0 -27" stroke-width="3" />
     </g>
     <g id="OMA_S_copper__opus_magnum">
@@ -122,7 +122,7 @@
     <g id="OMA_S_nickel__halving_metallurgy">
         <path d="M 30 25 a 7.5 7.5 0 0 0 0 -15 7.5 7.5 0 0 0 0 15 v 10 a 7.5 7.5 0 0 0 0 15 7.5 7.5 0 0 0 0 -15" stroke-width="3" />
     </g>
-    <g id="OMA_S_nickel__prima_materia">
+    <g id="OMA_S_nickel__uncommon_primes">
         <path d="M 30 20 a 5 5 0 0 0 0 -10 a 5 5 0 0 0 0 10 v 5 a 12.5 12.5 0 0 0 0 25 a 12.5 12.5 0 0 0 0 -25 " stroke-width="3" />
     </g>
     <g id="OMA_S_nobilis__noble_elements">
@@ -144,7 +144,7 @@
         <use href="#OMA_SC_animismus_triangle" transform="translate(0, 20)" />
         <path d="M 30 10 v 20 M 20 20 h 20" stroke-width="3" />
     </g>
-    <g id="OMA_S_platinum__prima_materia">
+    <g id="OMA_S_platinum__uncommon_primes">
         <path d="M 10 15 a 17 17 0 1 1 0 30 M 18 13 a 28 28 0 0 1 0 34 M 35 30 a 10 10 0 0 0 20 0 a 10 10 0 0 0 -20 0" stroke-width="3" />
         <circle cx="45" cy="30" r="1" class="fill" stroke-width="3" />
     </g>
@@ -252,7 +252,7 @@
     <g id="OMA_S_zinc__halving_metallurgy">
         <path d="M 17.5 20 l 22.5 22.5 h -22.5 l 8.75 -8.75 M 31.25 28.75 l 11.25 -11.25 M 32.5 17.5 h 10 v 10" stroke-width="3" />
     </g>
-    <g id="OMA_S_zinc__prima_materia">
+    <g id="OMA_S_zinc__uncommon_primes">
         <path d="M 30 20 a 15 15 0 0 0 0 30 a 15 15 0 0 0 0 -30 M 15 20 q 5 0 15 -10 q 10 10 15 10" stroke-width="3" />
     </g>
 </svg>
