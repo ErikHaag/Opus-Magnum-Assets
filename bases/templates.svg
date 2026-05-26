@@ -15,6 +15,9 @@
     <g id="OMA_B_primae__prima_materia">
         <path d="M 10 45 a 25 25 0 0 0 40 0 a 20 20 0 1 0 -40 0 " fill="var(--OMA-BC-primae-purple--prima-materia)" />
     </g>
+    <g id="OMA_B_quickcopper__halving_metallurgy">
+         <path d="M 30.29 8.88 c 6.9 -1.02 14.18 4.87 14.63 7.28 s -1.32 6.23 -4.48 3.02 s -7.35 -5.62 -11.84 -6.12 s -5.21 -3.16 1.69 -4.18 M 17.64 23.87 c 1.14 2.34 8.23 3.94 8.09 6.41 s -3.61 3.5 -7.31 0.99 s -5.22 -1.78 -5.47 -4.3 s 3.55 -5.44 4.69 -3.1 M 39.11 46.46 C 40.94 45.56 48 48.29 43.57 52.09 S 37.52 54.34 37.4 52 S 37.28 47.36 39.11 46.46" fill="var(--OMA-B-sednum--halving-metallurgy)"/>
+    </g>
     <g id="OMA_B_quintessence__opus_magnum">
         <circle cx="24" cy="42" r="12" fill="var(--OMA-B-fire--opus-magnum)" />
         <circle cx="42" cy="42" r="9" fill="var(--OMA-B-water--opus-magnum)" />

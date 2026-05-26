@@ -34,12 +34,12 @@
 
     --OMA-B-quickcopper--halving-metallurgy: #e96;
     --OMA-B-quicklime--halving-metallurgy: #ddc;
-    --OMA-B-beryl--halving-metallurgy: #ed1351;
+    --OMA-B-beryl--halving-metallurgy: #d31048;
     --OMA-B-wolfram--halving-metallurgy: #557;
-    --OMA-B-vulcan--halving-metallurgy: #e96315;
+    --OMA-B-vulcan--halving-metallurgy: #d26e33;
     --OMA-B-nickel--halving-metallurgy: #a3a28b;
     --OMA-B-zinc--halving-metallurgy: #5d75a5;
-    --OMA-B-sednum--halving-metallurgy: #de17de;
+    --OMA-B-sednum--halving-metallurgy: #b92ab9;
     --OMA-B-osmium--halving-metallurgy: #639;
 
     --OMA-B-chromium--metal-quintessence: #777;
@@ -85,6 +85,12 @@
     --OMA-B-bismuth--uncommon-primes: #69b;
     --OMA-B-cobalt--uncommon-primes: #66a;
     --OMA-B-platinum--uncommon-primes: #8888a7;
+    --OMA-B-muto--uncommon-primes: #ecc;
+    --OMA-B-fixus--uncommon-primes: #333;
+    --OMA-B-pale-muto--uncommon-primes: #a9a;
+    --OMA-B-dark-fixus--uncommon-primes: #444;
+    --OMA-B-true-muto--uncommon-primes: #c9e;
+    --OMA-B-true-fixus--uncommon-primes: #313;
 
     --OMA-B-aether--unstable-elements: #000;
     --OMA-BC-aether-red--unstable-elements: #c00;

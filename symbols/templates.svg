@@ -65,11 +65,21 @@
     <g id="OMA_S_copper__opus_magnum">
         <path d="M 30 32.5 a 10 10 0 0 0 0 -20 10 10 0 0 0 0 20 v 15 M 22 39 h 16" stroke-width="3" />
     </g>
+    <g id="OMA_S_dark_fixus__uncommon_primes">
+        <use href="#OMA_S_pale_muto__uncommon_primes" transform="rotate(180, 30, 30)" />
+    </g>
     <g id="OMA_S_earth__opus_magnum" class="nudge-down">
         <use href="#OMA_S_air__opus_magnum" transform="rotate(180, 30, 30)" />
     </g>
     <g id="OMA_S_fire__opus_magnum" class="nudge-up">
         <path d="M 30 12.68 l -20 34.64 h 40 z" stroke-width="3" />
+    </g>
+    <g id="OMA_S_fixus__uncommon_primes">
+        <use href="#OMA_S_muto__uncommon_primes" transform="rotate(180, 30, 30)" />
+    </g>
+    <g id="OMA_SC_fluxismus_triangle">
+        <use href="#OMA_SC_animismus_triangle" transform="translate(0, 5)" />
+        <use href="#OMA_SC_quicksilver_horn" />
     </g>
     <g id="OMA_S_frixon__neuvolics">
         <path d="M 50 30 l -10 -20 h -20 l -10 20 z M 30 10 v 40" stroke-width="3" />
@@ -119,6 +129,10 @@
     <g id="OMA_S_mors__opus_magnum">
         <use href="#OMA_S_vitae__opus_magnum" transform="rotate(180, 30, 30)" />
     </g>
+    <g id="OMA_S_muto__uncommon_primes">
+        <use href="#OMA_SC_fluxismus_triangle" />
+        <path d="M 30 37.5 v 12.5 M 23 43.5 h 14" stroke-width="3" />
+    </g>
     <g id="OMA_S_nickel__halving_metallurgy">
         <path d="M 30 25 a 7.5 7.5 0 0 0 0 -15 7.5 7.5 0 0 0 0 15 v 10 a 7.5 7.5 0 0 0 0 15 7.5 7.5 0 0 0 0 -15" stroke-width="3" />
     </g>
@@ -136,6 +150,10 @@
     </g>
     <g id="OMA_S_osmium__halving_metallurgy">
         <path d="M 30 6.91 l -20 11.55 v 23.09 l 20 11.55 20 -11.55 v -23.09 z M 10 18.46 l 20 11.55 20 -11.55 M 30 30.01 v 23.09" stroke-width="3" />
+    </g>
+    <g id="OMA_S_pale_muto__uncommon_primes">
+        <use href="#OMA_SC_fluxismus_triangle" />
+        <path d="M 25 37.5 v 12.5 M 35 37.5 v 12.5" stroke-width="3" />
     </g>
     <g id="OMA_S_pax__uncommon_primes">
         <use href="#OMA_S_bellum__uncommon_primes" transform="rotate(180, 30, 30)" />
@@ -169,6 +187,9 @@
     </g>
     <g id="OMA_S_quicksilver__opus_magnum">
         <use href="#OMA_S_copper__opus_magnum" transform="translate(0, 2.25)" />
+        <use href="#OMA_SC_quicksilver_horn" />
+    </g>
+    <g id="OMA_SC_quicksilver_horn">
         <path d="M 35 10 a 5 5 0 0 1 -10 0" stroke-width="3" />
     </g>
     <g id="OMA_S_quintessence__opus_magnum">
@@ -207,8 +228,15 @@
     <g id="OMA_S_tin__opus_magnum">
         <path d="M 35 10 v 40 M 45 35 h -30 M 19 35 c 14 0 10 -21 0 -10" stroke-width="3" />
     </g>
+    <g id="OMA_S_true_fixus__uncommon_primes">
+        <use href="#OMA_S_true_muto__uncommon_primes" transform="rotate(180, 30, 30)" />
+    </g>
     <g id="OMA_S_true_mors__true_animismus">
         <use href="#OMA_S_true_vitae__true_animismus" transform="rotate(180, 30, 30)" />
+    </g>
+    <g id="OMA_S_true_muto__uncommon_primes">
+        <use href="#OMA_SC_fluxismus_triangle" />
+        <path d="M 25 37.5 l 10 12.5 M 35 37.5 l -10 12.5" stroke-width="3" />
     </g>
     <g id="OMA_S_true_vitae__true_animismus">
         <use href="#OMA_SC_animismus_triangle" />
