@@ -96,10 +96,15 @@
     </g>
     <g id="OMA_S_grey_mors__true_animismus">
         <use href="#OMA_S_red_vitae__true_animismus" transform="rotate(180, 30, 30)" />
-    </g>
+    </g>    
     <g id="OMA_S_hestium__neuvolics">
         <path d="M 12.93 22.93 a 10 10 90 1 1 0 14.14 M 23.03 20.51 V 39.49 M 30 30 a 10 10 0 0 0 20 0 10 10 0 0 0 -20 0" stroke-width="3" />
         <circle cx="40" cy="30" r="1" class="fill" stroke-width="3" />
+    </g>
+    <g id="OMA_S_ichor__extransmutations" class="nudge-up">
+        <use href="#OMA_S_phosphorus__prima_materia" />
+        <circle cx="24" cy="14" r="1" class="fill" stroke-width="3" />
+        <circle cx="36" cy="14" r="1" class="fill" stroke-width="3" />
     </g>
     <g id="OMA_S_ignistal__complicated_elements">
         <path d="M 30 10 a 20 20 90 0 1 -20 20 20 20 90 0 1 20 20 20 20 90 0 1 20 -20 20 20 90 0 1 -20 -20" stroke-width="3" />
