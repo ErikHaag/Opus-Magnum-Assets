@@ -105,6 +105,7 @@
         <use href="#OMA_S_phosphorus__prima_materia" />
         <circle cx="24" cy="14" r="1" class="fill" stroke-width="3" />
         <circle cx="36" cy="14" r="1" class="fill" stroke-width="3" />
+        <circle cx="30" cy="45" r="1" class="fill" stroke-width="3" />
     </g>
     <g id="OMA_S_ignistal__complicated_elements">
         <path d="M 30 10 a 20 20 90 0 1 -20 20 20 20 90 0 1 20 20 20 20 90 0 1 20 -20 20 20 90 0 1 -20 -20" stroke-width="3" />
