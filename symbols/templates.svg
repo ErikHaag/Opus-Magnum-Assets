@@ -199,7 +199,7 @@
         <path d="M 35 10 a 5 5 0 0 1 -10 0" stroke-width="3" />
     </g>
     <g id="OMA_S_quintessence__opus_magnum">
-        <path d="M 30 10 l -17.32 30 h 34.64 z M 24.23 20 h -11.55 l 5.77 10 M 35.77 20 h 11.55 l -5.77 10 M 24.23 40 l 5.77 10 5.77 -10" stroke-width="3" />
+        <path d="M 12.68 20 h 34.64 l -17.32 30 z M 24.23 40 h -11.55 l 5.77 -10 M 35.77 40 h 11.55 l -5.77 -10 M 24.23 20 l 5.77 -10 l 5.77 10" stroke-width="3" />
     </g>
     <g id="OMA_S_red_vitae__true_animismus">
         <use href="#OMA_SC_animismus_triangle" />
