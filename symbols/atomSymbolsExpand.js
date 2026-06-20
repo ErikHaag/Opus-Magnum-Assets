@@ -98,12 +98,12 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         styles = window.getComputedStyle(document.body);
         strokeStyles = Array.from(styles).filter((s) => s.startsWith("--OMA-S-") && s != "--OMA-S-default-color").map((s) => s.substring(8));
         let disk = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        destinationElement.append(disk);
         let outlineColor = "var(--OMA-S-outline-color)";
         if (mode >= 3) {
             disk.style.fill = outlineColor;
             outlineColor = colorToHex(window.getComputedStyle(disk).fill);
         }
-        destinationElement.append(disk);
         for (let atom of destinationElement.children) {
             let id = atom.id.substring(6).replaceAll("_", "-");
             let color = "var(--OMA-S-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
