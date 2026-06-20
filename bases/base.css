@@ -66,6 +66,11 @@
 
     --OMA-B-antimony--prima-materia: #98b;
     --OMA-B-magnesia--prima-materia: #d6b;
+    --OMA-B-opalescence--prima-materia: #fee;
+    --OMA-BC-opalescence-air--prima-materia: hsl(from var(--OMA-B-air--opus-magnum) h s calc(l * 1.2));
+    --OMA-BC-opalescence-earth--prima-materia: hsl(from var(--OMA-B-earth--opus-magnum) h s calc(l * 1.5));
+    --OMA-BC-opalescence-fire--prima-materia: hsl(from var(--OMA-B-fire--opus-magnum) h s calc(l * 1.5));
+    --OMA-BC-opalescence-water--prima-materia: hsl(from var(--OMA-B-water--opus-magnum) h s calc(l * 1.5));
     --OMA-B-phosphorus--prima-materia: #ae7;
     --OMA-B-potash--prima-materia: #d64;
     --OMA-B-quicklime--prima-materia: #d95;

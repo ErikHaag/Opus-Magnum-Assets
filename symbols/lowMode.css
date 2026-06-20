@@ -9,4 +9,10 @@
     *.fill {
         fill: var(--OMA-S-default-color);
     }
+
+    *.OMA-SO {
+        fill: none;
+        stroke: var(--OMA-S-outline-color);
+        stroke-linecap: square;
+    }
 }

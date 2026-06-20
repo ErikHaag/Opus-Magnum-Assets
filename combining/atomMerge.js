@@ -26,6 +26,16 @@ function atomMerge(destinationElement, symbolsElement, basesElement, options = {
         error += "Mode must be a number or nullish.\n";
     }
 
+    let symbolClass = options.symbolClass ?? "OMA-S";
+    if (typeof (symbolClass) != "string") {
+        error += "symbolClass must be a string or nullish.";
+    }
+
+    let lowMode = options.lowMode ?? false;
+    if (typeof (lowMode) != "boolean") {
+        error += "lowMode must be a boolean or nullish.";
+    }
+
     if (error.length != 0) {
         throw new Error(e);
     }
@@ -69,6 +79,10 @@ function atomMerge(destinationElement, symbolsElement, basesElement, options = {
                 symbolG.setAttribute("transform", nudgeUpTransform);
             } else {
                 symbolG.setAttribute("transform", normalTransform);
+            }
+
+            if (lowMode && symbolSrc.classList.contains(symbolClass)) {
+                symbolG.classList.add(symbolClass);
             }
         } else {
             let use = document.createElementNS("http://www.w3.org/2000/svg", "use");

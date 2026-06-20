@@ -27,7 +27,21 @@ async function expandAtomSymbols(destinationElement, options = {}) {
 
     let symbolClass = options.symbolClass ?? "OMA-S";
     if (typeof (symbolClass) != "string") {
-        error += "symbolClass must be a string or nullish.";
+        error += "symbolClass must be a string or nullish.\n";
+    }
+
+    let outlineClass = options.outlineClass ?? "OMA-SO";
+    if (typeof (outlineClass) != "string") {
+        error += "outlineClass must be a string or nullish.\n";
+    } 
+
+    if (typeof (symbolClass) == "string" && typeof (outlineClass) != "string" && symbolClass === outlineClass) {
+        error += "symbolClass and outlineClass must be different.\n"
+    }
+
+    let allowOutlines = options.allowOutlines ?? false;
+    if (typeof (allowOutlines) != "boolean") {
+        error += "allowOutlines must be a boolean or nullish.\n";
     }
 
     if (error.length != 0) {
@@ -59,7 +73,22 @@ async function expandAtomSymbols(destinationElement, options = {}) {
             let elem = destinationElement.children[i];
             if (elem.id.startsWith("OMA_SC_")) {
                 elem.remove();
+                i--;
+                continue;
             }
+            if (allowOutlines && elem.classList.contains("outline")) {
+                let fragment = document.createDocumentFragment();
+                for (let c of elem.children) {
+                    let cClone = c.cloneNode();
+                    cClone.setAttribute("stroke-width", Number.parseFloat(cClone.getAttribute("stroke-width")) + 2);
+                    cClone.classList.add(outlineClass);
+                    fragment.appendChild(cClone);
+                }
+
+
+                elem.prepend(fragment);
+            }
+
         }
     }
     
@@ -69,6 +98,11 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         styles = window.getComputedStyle(document.body);
         strokeStyles = Array.from(styles).filter((s) => s.startsWith("--OMA-S-") && s != "--OMA-S-default-color").map((s) => s.substring(8));
         let disk = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        let outlineColor = "var(--OMA-S-outline-color)";
+        if (mode >= 3) {
+            disk.style.fill = outlineColor;
+            outlineColor = colorToHex(window.getComputedStyle(disk).fill);
+        }
         destinationElement.append(disk);
         for (let atom of destinationElement.children) {
             let id = atom.id.substring(6).replaceAll("_", "-");
@@ -79,8 +113,14 @@ async function expandAtomSymbols(destinationElement, options = {}) {
             }
             for (let elem of atom.children) {
                 if (["circle", "ellipse", "line", "path"].includes(elem.tagName)) {
-                    elem.setAttribute("fill", elem.classList.contains("fill") ? color : "none");
-                    elem.setAttribute("stroke", color);
+                    if (elem.classList.contains(outlineClass)) {
+                        elem.setAttribute("fill", "none");
+                        elem.setAttribute("stroke", outlineColor);
+                        elem.setAttribute("stroke-linecap", "square");
+                    } else {
+                        elem.setAttribute("fill", elem.classList.contains("fill") ? color : "none");
+                        elem.setAttribute("stroke", color);
+                    }
                 }
             }
         }

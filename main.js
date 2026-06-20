@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let baseDestination = document.getElementById("bases");
     let atomDestination = document.getElementById("atoms");
 
-    await expandAtomSymbols(symbolsDestination, { location: "./symbols/templates.svg", mode: 2 });
+    await expandAtomSymbols(symbolsDestination, { location: "./symbols/templates.svg", allowOutlines: true, mode: 2 });
 
     await expandAtomBases(baseDestination, { location: "./bases/templates.svg", mode: 0 });
 

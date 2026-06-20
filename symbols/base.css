@@ -1,5 +1,7 @@
 :root {
     --OMA-S-default-color: #fefefe;
+    --OMA-S-outline-color: #000;
+
 
     --OMA-S-aerolith--complicated-elements: hsl(50, 100%, 60%);
     --OMA-S-ignistal--complicated-elements: hsl(30, 100%, 50%);
