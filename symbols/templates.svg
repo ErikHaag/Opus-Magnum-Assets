@@ -39,7 +39,7 @@
         <path d="M 30 27.5 a 10 10 0 0 0 0 20 a 10 10 0 0 0 0 -20 v -15 M 23 20 h 14" stroke-width="3" />
     </g>
     <g id="OMA_S_azulum__neuvolics">
-        <use href="#OMA_S_iridium__neuvolics" transform="rotate(180, 30, 30)" />
+        <path d="M 18 50 l 3 -7 M 23.4 37.4 l 6.6 -15.4 l 12 28 M 40.41 38.15 a 16 16 0 1 0 -5.63 3.12" stroke-width="3" />
     </g>
     <g id="OMA_S_bellum__uncommon_primes">
         <use href="#OMA_SC_animismus_triangle" />
@@ -54,6 +54,9 @@
     </g>
     <g id="OMA_S_bismuth__uncommon_primes">
         <path d="M 15 10 a 30 20 -10 0 1 -2.5 25 h 35 a 30 20 10 0 1 -2.5 -25 M 30 22.5 v 27.5" stroke-width="3" />
+    </g>
+    <g id="OMA_S_calcite__true_salt">
+        <path d="M 12 30 a 18 20 0 0 0 36 0 a 18 20 0 0 0 -36 0 M 12.3 26.52 h 35.4 M 12.3 33.48 h 35.4" stroke-width="3" />
     </g>
     <g id="OMA_S_chromium__metal_quintessence">
         <path d="M 15 27 a 10 10 0 1 1 10 10 M 21 37 h 19 M 35 16 q 3 -3 5 -3 t 5 3 M 40 13 v 38 M 36 47 h 8" stroke-width="3" />
@@ -82,13 +85,13 @@
         <use href="#OMA_SC_quicksilver_horn" />
     </g>
     <g id="OMA_S_frixon__neuvolics">
-        <path d="M 50 30 l -10 -20 h -20 l -10 20 z M 30 10 v 40" stroke-width="3" />
+        <path d="M 39.5 19.5 A 9.5 9.5 0 1 0 30 29 V 50 M 22 40.5 h 8 M 16.5 28 a 17 17 0 0 0 13.5 6.67 M 34.5 15.5 l 5 4 l 5 -4" stroke-width="3" />
     </g>
     <g id="OMA_S_gamma__noble_elements">
         <path d="M 22.5 20 c 20 40 -5 40 15 0" stroke-width="3" />
     </g>
     <g id="OMA_S_gelaron__neuvolics">
-        <use href="#OMA_S_frixon__neuvolics" transform="rotate(180, 30, 30)" />
+        <use href="#OMA_S_frixon__neuvolics" transform="translate(60, 0) scale(-1, 1)" />
     </g>
     <g id="OMA_S_gold__opus_magnum">
         <circle cx="30" cy="30" r="20" stroke-width="3" />
@@ -96,10 +99,13 @@
     </g>
     <g id="OMA_S_grey_mors__true_animismus">
         <use href="#OMA_S_red_vitae__true_animismus" transform="rotate(180, 30, 30)" />
-    </g>    
+    </g>
+    <g id="OMA_S_halite__true_salt">
+        <use href="#OMA_S_calcite__true_salt" />
+        <path d=" M 14.6 19.56 h 30.8 M 14.6 40.44 h 30.8" stroke-width="3" />
+    </g>
     <g id="OMA_S_hestium__neuvolics">
-        <path d="M 12.93 22.93 a 10 10 90 1 1 0 14.14 M 23.03 20.51 V 39.49 M 30 30 a 10 10 0 0 0 20 0 10 10 0 0 0 -20 0" stroke-width="3" />
-        <circle cx="40" cy="30" r="1" class="fill" stroke-width="3" />
+        <path d="M 40 17 a 16.4 16.4 0 1 0 0 26 M 32 13.7 A 30 30 0 0 0 32 46.3 M 13.6 30 h 36.4 M 13.6 30 Q 22.79 38.43 32 30 T 50 30 M 45 25 l 5 5 L 45 35" stroke-width="3" />
     </g>
     <g id="OMA_S_ichor__extransmutations" class="nudge-up">
         <use href="#OMA_S_phosphorus__prima_materia" />
@@ -111,7 +117,7 @@
         <path d="M 30 10 a 20 20 90 0 1 -20 20 20 20 90 0 1 20 20 20 20 90 0 1 20 -20 20 20 90 0 1 -20 -20" stroke-width="3" />
     </g>
     <g id="OMA_S_iridium__neuvolics">
-        <path d="M 43 12.5 a 14 12.72 0 0 1 -26 0 M 30 47.5 a 13.5 13.5 0 0 0 0 -27 a 13.5 13.5 0 0 0 0 27" stroke-width="3" />
+        <path d="M 30 24 v 12 M 24.8 27 l 10.39 6 M 35.2 27 l -10.39 6 M 20.4 37.2 a 10.8 10.8 90 1 1 19.2 0 M 15.6 37.2 a 15 15 90 1 1 28.8 0 M 10.8 37.2 a 19.5 19.5 90 1 1 38.4 0" stroke-width="3" />
     </g>
     <g id="OMA_S_iron__opus_magnum">
         <path d="M 15 35 a 10 10 0 0 0 20 0 10 10 0 0 0 -20 0 M 32.07 27.93 l 12.93 -12.93 M 35 15 h 10 v 10" stroke-width="3" />
@@ -294,7 +300,7 @@
         <path d="M 20 45 l 10 -30 l 10 30 M 50 20 a 30 30 0 0 1 -40 0 a 20 20 0 0 0 40 0 a 30 30 0 0 1 -40 0" stroke-width="3" />
     </g>
     <g id="OMA_S_zephiron__neuvolics">
-        <path d="M 30 31.25 a 10 10 0 0 0 0 -20 a 10 10 0 0 0 0 20 v 17.5 M 22 40.25 h 16 M 15 28.25 a 20 20 0 0 0 30 0" stroke-width="3" />
+        <path d="M 30 29 a 9.5 9.5 0 0 0 0 -19 a 9.5 9.5 0 0 0 0 19 V 50 M 22 40.5 h 16 M 16.5 28 a 17 17 0 0 0 27 0" stroke-width="3" />
     </g>
     <g id="OMA_S_zinc__halving_metallurgy">
         <path d="M 17.5 20 l 22.5 22.5 h -22.5 l 8.75 -8.75 M 31.25 28.75 l 11.25 -11.25 M 32.5 17.5 h 10 v 10" stroke-width="3" />
