@@ -77,9 +77,6 @@
     <g id="OMA_S_earth__opus_magnum" class="nudge-down">
         <use href="#OMA_S_air__opus_magnum" transform="rotate(180, 30, 30)" />
     </g>
-    <g id="OMA_S_forr__impetallurgy">
-        <path d="M 12.5 30 h 32.5 l -25 -20 M 20 50 l -5 -40 h 30" stroke-width="3" />
-    </g>
     <g id="OMA_S_fire__opus_magnum" class="nudge-up">
         <path d="M 30 12.68 l -20 34.64 h 40 z" stroke-width="3" />
     </g>
@@ -89,6 +86,9 @@
     <g id="OMA_SC_fluxismus_triangle">
         <use href="#OMA_SC_animismus_triangle" transform="translate(0, 5)" />
         <use href="#OMA_SC_quicksilver_horn" />
+    </g>
+     <g id="OMA_S_forr__impetallurgy">
+        <path d="M 12.5 30 h 32.5 l -25 -20 M 20 50 l -5 -40 h 30" stroke-width="3" />
     </g>
     <g id="OMA_S_frixon__neuvolics">
         <path d="M 39.5 19.5 A 9.5 9.5 0 1 0 30 29 V 50 M 22 40.5 h 8 M 16.5 28 a 17 17 0 0 0 13.5 6.67 M 34.5 15.5 l 5 4 l 5 -4" stroke-width="3" />
