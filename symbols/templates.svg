@@ -16,6 +16,9 @@
     <g id="OMA_SC_animismus_triangle">
         <path d="M 30 10 l -12.99 22.5 h 25.98 z" stroke-width="3" />
     </g>
+    <g id="OMA_S_anisium__impetallurgy">
+        <path d="M 12.5 17.5 l 10 20 h 15 l 10 -20 M 30 10 v 40" stroke-width="3" />
+    </g>
     <g id="OMA_S_anti_copper__alchemical_inversions">
         <use href="#OMA_S_copper__opus_magnum" transform="rotate(180, 30, 30)" />
     </g>
@@ -74,6 +77,9 @@
     <g id="OMA_S_earth__opus_magnum" class="nudge-down">
         <use href="#OMA_S_air__opus_magnum" transform="rotate(180, 30, 30)" />
     </g>
+    <g id="OMA_S_forr__impetallurgy">
+        <path d="M 12.5 30 h 32.5 l -25 -20 M 20 50 l -5 -40 h 30" stroke-width="3" />
+    </g>
     <g id="OMA_S_fire__opus_magnum" class="nudge-up">
         <path d="M 30 12.68 l -20 34.64 h 40 z" stroke-width="3" />
     </g>
@@ -96,6 +102,9 @@
     <g id="OMA_S_gold__opus_magnum">
         <circle cx="30" cy="30" r="20" stroke-width="3" />
         <circle cx="30" cy="30" r="1" class="fill" stroke-width="3" />
+    </g>
+    <g id="OMA_S_gratine__impetallurgy">
+        <path d="M 15 30 c 15.93 3.43 29.39 -8.22 25.39 -16.6 s -13.62 -0.86 -6.8 17.96 s -5.76 19.72 -11.7 17.96" stroke-width="3" />
     </g>
     <g id="OMA_S_grey_mors__true_animismus">
         <use href="#OMA_S_red_vitae__true_animismus" transform="rotate(180, 30, 30)" />
@@ -121,6 +130,9 @@
     </g>
     <g id="OMA_S_iron__opus_magnum">
         <path d="M 15 35 a 10 10 0 0 0 20 0 10 10 0 0 0 -20 0 M 32.07 27.93 l 12.93 -12.93 M 35 15 h 10 v 10" stroke-width="3" />
+    </g>
+    <g id="OMA_S_lardeon__impetallurgy">
+         <path d="M 30 10 l 10 27 a 10 10 0 1 1 -1.7 -3.5" stroke-width="3" />
     </g>
     <g id="OMA_S_lead__opus_magnum">
         <path d="M 38.34 50 q -4 -6 0 -10 c 7 -8 -3 -30 -14.49 -10 M 28.84 16 h -10 M 23.84 50 v -40" stroke-width="3" />
@@ -249,6 +261,9 @@
     </g>
     <g id="OMA_S_terramarine__complicated_elements">
         <path d="M 12 40 c 14 -8 22 8 36 0 m -25.1 -2.1 l -8.2 -19.9 m 15.3 22 l 0 -25 m 5.5 26.8 l 9.8 -23.7" stroke-width="3" />
+    </g>
+    <g id="OMA_S_terrine__impetallurgy">
+        <path d="M 27.5 10 v 40 M 17.5 40 v -20 l 25 -9 v 38 z" stroke-width="3" />
     </g>
     <g id="OMA_S_tin__opus_magnum">
         <path d="M 35 10 v 40 M 45 35 h -30 M 19 35 c 14 0 10 -21 0 -10" stroke-width="3" />
