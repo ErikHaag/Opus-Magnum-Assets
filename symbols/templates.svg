@@ -104,7 +104,7 @@
         <circle cx="30" cy="30" r="1" class="fill" stroke-width="3" />
     </g>
     <g id="OMA_S_gratine__impetallurgy">
-        <path d="M 15 30 c 15.93 3.43 29.39 -8.22 25.39 -16.6 s -13.62 -0.86 -6.8 17.96 s -5.76 19.72 -11.7 17.96" stroke-width="3" />
+        <path d="M 13 26.4 c 20.71 4.46 38.6 -17.23 22.27 -15.25 s -11 13.17 -1.64 23.31 s -2.99 19.5 -15.72 13.2" stroke-width="3" />
     </g>
     <g id="OMA_S_grey_mors__true_animismus">
         <use href="#OMA_S_red_vitae__true_animismus" transform="rotate(180, 30, 30)" />
