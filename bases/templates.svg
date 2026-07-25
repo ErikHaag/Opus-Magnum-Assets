@@ -30,4 +30,7 @@
         <circle cx="30" cy="33" r="12" fill="var(--OMA-B-earth--opus-magnum)" />
         <circle cx="33" cy="42" r="9" fill="var(--OMA-B-air--opus-magnum)" />
     </g>
+    <g id="OMA_B_vaca__vacancy">
+        <circle cx="30" cy="30" r="25" fill="var(--OMA-BC-vaca-backing--vacancy)" />
+    </g>
 </svg>

@@ -44,6 +44,7 @@
     --OMA-B-sednum--halving-metallurgy: #b92ab9;
     --OMA-B-osmium--halving-metallurgy: #639;
 
+    --OMA-B-blanc--impetallurgy: #b86;
     --OMA-B-anisium--impetallurgy: #a86;
     --OMA-B-forr--impetallurgy: #436;
     --OMA-B-gratine--impetallurgy: #ca4;
@@ -114,5 +115,6 @@
     --OMA-BC-aether-magenta--unstable-elements: #f0f;
     --OMA-B-uranium--unstable-elements: #151;
 
-    --OMA-B-vaca--vacancy: #111;
+    --OMA-B-vaca--vacancy: #555;
+    --OMA-BC-vaca-backing--vacancy: #333;
 }
