@@ -14,7 +14,7 @@
     --OMA-B-copper--opus-magnum: #d62;
     --OMA-B-silver--opus-magnum: #888;
     --OMA-B-gold--opus-magnum: #ed3;
-    --OMA-B-repeat--opus-magnum: #626459;
+    --OMA-B-repeat--opus-magnum: #665;
 
     --OMA-B-tenebrivex--alchemical-inversions: #708;
     --OMA-B-yttrium--alchemical-inversions: #80a;
@@ -34,14 +34,23 @@
 
     --OMA-B-ichor--extransmutations: #511;
 
+    --OMA-B-carium--fanolytics: #116;
+    --OMA-B-coxeter--fanolytics: #86b;
+    --OMA-B-fano--fanolytics: #c48;
+    --OMA-B-horton--fanolytics: #221;
+    --OMA-BC-horton-star--fanolytics: #987;
+    --OMA-B-klein--fanolytics: #b43;
+    --OMA-B-sanders--fanolytics: #aa8;
+    --OMA-B-knuth--fanolytics: #8b8;
+
     --OMA-B-quickcopper--halving-metallurgy: #e96;
     --OMA-B-quicklime--halving-metallurgy: #ddc;
-    --OMA-B-beryl--halving-metallurgy: #d31048;
+    --OMA-B-beryl--halving-metallurgy: #d14;
     --OMA-B-wolfram--halving-metallurgy: #557;
-    --OMA-B-vulcan--halving-metallurgy: #d26e33;
-    --OMA-B-nickel--halving-metallurgy: #a3a28b;
-    --OMA-B-zinc--halving-metallurgy: #5d75a5;
-    --OMA-B-sednum--halving-metallurgy: #b92ab9;
+    --OMA-B-vulcan--halving-metallurgy: #d63;
+    --OMA-B-nickel--halving-metallurgy: #aa8;
+    --OMA-B-zinc--halving-metallurgy: #57a;
+    --OMA-B-sednum--halving-metallurgy: #b3b;
     --OMA-B-osmium--halving-metallurgy: #639;
 
     --OMA-B-blanc--impetallurgy: #b86;
@@ -57,14 +66,14 @@
     --OMA-BC-chromium-blue--metal-quintessence: #77c;
     --OMA-BC-chromium-green--metal-quintessence: #7a7;
 
-    --OMA-B-azulum--neuvolics: #2e4980;
-    --OMA-B-frixon--neuvolics: #b0a881;
-    --OMA-B-gelaron--neuvolics: #78a0aa;
-    --OMA-B-hestium--neuvolics: #8a9096;
-    --OMA-B-iridium--neuvolics: #7a3a89;
+    --OMA-B-azulum--neuvolics: #348;
+    --OMA-B-frixon--neuvolics: #ba8;
+    --OMA-B-gelaron--neuvolics: #7aa;
+    --OMA-B-hestium--neuvolics: #899;
+    --OMA-B-iridium--neuvolics: #748;
     --OMA-B-mitrum--neuvolics: #444;
-    --OMA-B-taceum--neuvolics: #6e774f;
-    --OMA-B-zephiron--neuvolics: #8d6197;
+    --OMA-B-taceum--neuvolics: #675;
+    --OMA-B-zephiron--neuvolics: #869;
 
     --OMA-B-nobilis--noble-elements: var(--OMA-B-salt--opus-magnum);
     --OMA-B-alpha--noble-elements: #c77;
@@ -101,7 +110,7 @@
     --OMA-B-nickel--uncommon-primes: #858;
     --OMA-B-bismuth--uncommon-primes: #69b;
     --OMA-B-cobalt--uncommon-primes: #66a;
-    --OMA-B-platinum--uncommon-primes: #8888a7;
+    --OMA-B-platinum--uncommon-primes: #88a;
     --OMA-B-muto--uncommon-primes: #ecc;
     --OMA-B-fixus--uncommon-primes: #333;
     --OMA-B-pale-muto--uncommon-primes: #a9a;

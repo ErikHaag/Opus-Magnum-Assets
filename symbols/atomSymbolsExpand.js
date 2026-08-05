@@ -94,22 +94,22 @@ async function expandAtomSymbols(destinationElement, options = {}) {
     
     let styles;
     let strokeStyles;
+    let outlineStyles;
     if (mode >= 2) {
-        styles = window.getComputedStyle(document.body);
-        strokeStyles = Array.from(styles).filter((s) => s.startsWith("--OMA-S-") && s != "--OMA-S-default-color").map((s) => s.substring(8));
+        styles = Array.from(window.getComputedStyle(document.body));
+        strokeStyles = styles.filter((s) => s.startsWith("--OMA-S-") && s != "--OMA-S-default-color").map((s) => s.substring(8));
+        outlineStyles = styles.filter((s) => s.startsWith("--OMA-SO-") && s != "--OMA-SO-default-color").map((s) => s.substring(9));
         let disk = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         destinationElement.append(disk);
-        let outlineColor = "var(--OMA-S-outline-color)";
-        if (mode >= 3) {
-            disk.style.fill = outlineColor;
-            outlineColor = colorToHex(window.getComputedStyle(disk).fill);
-        }
         for (let atom of destinationElement.children) {
             let id = atom.id.substring(6).replaceAll("_", "-");
-            let color = "var(--OMA-S-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
+            let baseColor = "var(--OMA-S-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
+            let outlineColor = "var(--OMA-SO-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
             if (mode >= 3) {
-                disk.style.fill = color;
-                color = colorToHex(window.getComputedStyle(disk).fill);
+                disk.style.fill = baseColor;
+                baseColor = colorToHex(window.getComputedStyle(disk).fill);
+                disk.style.fill = outlineColor;
+                outlineColor = colorToHex(window.getComputedStyle(disk).fill);
             }
             for (let elem of atom.children) {
                 if (["circle", "ellipse", "line", "path"].includes(elem.tagName)) {
@@ -118,8 +118,8 @@ async function expandAtomSymbols(destinationElement, options = {}) {
                         elem.setAttribute("stroke", outlineColor);
                         elem.setAttribute("stroke-linecap", "square");
                     } else {
-                        elem.setAttribute("fill", elem.classList.contains("fill") ? color : "none");
-                        elem.setAttribute("stroke", color);
+                        elem.setAttribute("fill", elem.classList.contains("fill") ? baseColor : "none");
+                        elem.setAttribute("stroke", baseColor);
                     }
                 }
             }

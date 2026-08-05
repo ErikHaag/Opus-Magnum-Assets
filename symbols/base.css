@@ -1,6 +1,6 @@
 :root {
     --OMA-S-default-color: #fefefe;
-    --OMA-S-outline-color: #000;
+    --OMA-SO-default-color: #000;
 
 
     --OMA-S-aerolith--complicated-elements: hsl(50, 100%, 60%);
@@ -9,6 +9,11 @@
     --OMA-S-pyrolite--complicated-elements: hsl(0, 100%, 40%);
     --OMA-S-terramarine--complicated-elements: hsl(110, 100%, 40%);
     --OMA-S-vaprorine--complicated-elements: hsl(280, 100%, 60%);
+
+    --OMA-S-coxeter--fanolytics: #000;
+    --OMA-S-horton--fanolytics: #000;
+    --OMA-SO-horton--fanolytics: #620;
+    --OMA-S-knuth--fanolytics: #000;
 
     --OMA-S-repeat--opus-magnum: #222;
 }
