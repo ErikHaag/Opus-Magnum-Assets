@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg">
+    <g id="OMA_S_abject_mors__magnus_animismus">
+        <use href="#OMA_S_sublime_vitae__magnus_animismus" transform="rotate(180, 30, 30)" />
+    </g>
     <g id="OMA_S_aerolith__complicated_elements">
         <path d="M 10 37.93 a 14.14 14.14 0 0 0 20 -20 14.14 14.14 0 0 0 20 20" stroke-width="3" />
     </g>
@@ -275,6 +278,10 @@
     </g>
     <g id="OMA_S_silver__opus_magnum">
         <path d="M 15.86 15.86 a 20 20 0 1 1 0 28.28 M 44.14 15.86 v 28.28" stroke-width="3" />
+    </g>
+    <g id="OMA_S_sublime_vitae__magnus_animismus">
+        <use href="#OMA_S_true_vitae__true_animismus" />
+        <line x1="10" y1="41.25" x2="50" y2="41.25" stroke-width="3" />
     </g>
     <g id="OMA_SC_sulfur_infinity">
         <path d="M 30 39.4724 c 5 -5 18.75 -6.875 18.75 3.125 s -16.25 2.5 -18.75 -3.125 c -5 -5 -18.75 -6.875 -18.75 3.125 s 16.25 2.5 18.75 -3.125" stroke-width="3" />
