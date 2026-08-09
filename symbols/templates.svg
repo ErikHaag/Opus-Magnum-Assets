@@ -213,12 +213,22 @@
     <g id="OMA_S_osmium__halving_metallurgy">
         <path d="M 30 6.91 l -20 11.55 v 23.09 l 20 11.55 20 -11.55 v -23.09 z M 10 18.46 l 20 11.55 20 -11.55 M 30 30.01 v 23.09" stroke-width="3" />
     </g>
+    <g id="OMA_S_oxygen__prima_cyclia">
+        <circle cx="30" cy="30" r="15" stroke-width="3" />
+        <path d="M 30 10 v 40 M 10 30 h 40 M 20 10 h 20 M 20 50 h 20 M 10 20 v 20 M 50 20 v 20" stroke-width="3" />
+    </g>
     <g id="OMA_S_pale_muto__uncommon_primes">
         <use href="#OMA_SC_fluxismus_triangle" />
         <path d="M 25 37.5 v 12.5 M 35 37.5 v 12.5" stroke-width="3" />
     </g>
     <g id="OMA_S_pax__uncommon_primes">
         <use href="#OMA_S_bellum__uncommon_primes" transform="rotate(180, 30, 30)" />
+    </g>
+    <g id="OMA_S_phlogiston__prima_cyclia">
+        <circle cx="30" cy="15" r="5" stroke-width="3" />
+        <circle cx="42.99" cy="37.5" r="5" stroke-width="3" />
+        <circle cx="17.01" cy="37.5" r="5" stroke-width="3" />
+        <path d="M 32.5 19.33 l 7.99 13.84 M 22.01 37.5 h 15.98 M 19.51 33.17 l 7.99 -13.84" stroke-width="3" />
     </g>
     <g id="OMA_S_phosphorus__prima_materia">
         <use href="#OMA_SC_animismus_triangle" transform="translate(0, 20)" />
@@ -282,6 +292,9 @@
     <g id="OMA_S_sublime_vitae__magnus_animismus">
         <use href="#OMA_S_true_vitae__true_animismus" />
         <line x1="10" y1="41.25" x2="50" y2="41.25" stroke-width="3" />
+    </g>
+    <g id="OMA_S_sulfur__prima_cyclia">
+        <path d="M 30 25 l 12.5 12.5 l -12.5 12.5 l -12.5 -12.5 z v -15 M 22.5 17.5 h 15" stroke-width="3"/>
     </g>
     <g id="OMA_SC_sulfur_infinity">
         <path d="M 30 39.4724 c 5 -5 18.75 -6.875 18.75 3.125 s -16.25 2.5 -18.75 -3.125 c -5 -5 -18.75 -6.875 -18.75 3.125 s 16.25 2.5 18.75 -3.125" stroke-width="3" />
