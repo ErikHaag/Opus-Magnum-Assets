@@ -3,6 +3,9 @@
     <g id="OMA_S_abject_mors__magnus_animismus">
         <use href="#OMA_S_sublime_vitae__magnus_animismus" transform="rotate(180, 30, 30)" />
     </g>
+    <g id="OMA_S_aegero__false_aether">
+        <use href="#OMA_S_phasmus__false_aether" transform="rotate(180, 30, 30)" />
+    </g>
     <g id="OMA_S_aerolith__complicated_elements">
         <path d="M 10 37.93 a 14.14 14.14 0 0 0 20 -20 14.14 14.14 0 0 0 20 20" stroke-width="3" />
     </g>
@@ -63,14 +66,15 @@
     </g>
     <g id="OMA_S_blanc__impetallurgy">
         <path d="M 28 10 l 1.5 5.5 5.5 1.5 -5.5 1.5 -1.5 5.5  -1.5 -5.5 -5.5 -1.5 5.5 -1.5 z" class="fill" stroke="none" />
-
-        <!-- <line x1="28" y1="10" x2="28" y2="24" stroke-width="3" /> -->
-        <!-- <line x1="21" y1="17" x2="35" y2="17" stroke-width="3" /> -->
         <path d="M 13 20 q 5 15 35 15" stroke-width="3" />
         <use href="#OMA_SC_vaca_star" transform="translate(39, 42)" />
     </g>
     <g id="OMA_S_calcite__true_salt">
         <path d="M 12 30 a 18 20 0 0 0 36 0 a 18 20 0 0 0 -36 0 M 12.3 26.52 h 35.4 M 12.3 33.48 h 35.4" stroke-width="3" />
+    </g>
+    <g id="OMA_S_capax__false_aether">
+        <path d="M 18.17 30.5 L 30 10 L 41.83 30.5 M 20.32 26.76 A 14.2 9.47 0 0 0 39.68 26.76 M 30 29.57 V 35.8 M 30 45.26 V 50" stroke-width="3" />
+        <circle cx="30" cy="40.53" r="4.73" stroke-width="3" />
     </g>
     <g id="OMA_S_carium__fanolytics">
         <path d="M 12.68 40 l 17.32 -30 l 17.32 30 M 30 10 v 30" stroke-width="3" />
@@ -87,6 +91,9 @@
     </g>
     <g id="OMA_S_coxeter__fanolytics">
         <use href="#OMA_S_sanders__fanolytics" transform="rotate(120, 30, 30)" />
+    </g>
+    <g id="OMA_S_daedrum__false_aether">
+        <path d="M 15.61 22.18 A 17 10 0 0 0 44.39 22.18 A 15 10 0 1 1 15.61 22.18 Z M 25.72 34.58 A 5 5 0 1 1 34.28 34.58" stroke-width="3" />
     </g>
     <g id="OMA_S_dark_fixus__uncommon_primes">
         <use href="#OMA_S_pale_muto__uncommon_primes" transform="rotate(180, 30, 30)" />
@@ -148,6 +155,12 @@
     <g id="OMA_S_ignistal__complicated_elements">
         <path d="M 30 10 a 20 20 90 0 1 -20 20 20 20 90 0 1 20 20 20 20 90 0 1 20 -20 20 20 90 0 1 -20 -20" stroke-width="3" />
     </g>
+    <g id="OMA_S_illustra__false_aether">
+        <path d="M 12 30 A 18 20 0 0 0 48 30 A 18 20 0 0 0 12 30 A 18 5 0 0 0 48 30 A 18 5 0 0 0 12 30 M 25 30 A 5 5 0 0 0 35 30 A 5 5 0 0 0 25 30" stroke-width="3">
+    </g>
+    <g id="OMA_S_inops__false_aether">
+        <use href="#OMA_S_capax__false_aether" transform="rotate(180, 30, 30)" />
+    </g>
     <g id="OMA_S_iridium__neuvolics">
         <path d="M 30 24 v 12 M 24.8 27 l 10.39 6 M 35.2 27 l -10.39 6 M 20.4 37.2 a 10.8 10.8 90 1 1 19.2 0 M 15.6 37.2 a 15 15 90 1 1 28.8 0 M 10.8 37.2 a 19.5 19.5 90 1 1 38.4 0" stroke-width="3" />
     </g>
@@ -168,6 +181,9 @@
     </g>
     <g id="OMA_S_lux__uncommon_primes" class="nudge-up">
         <path d="M 10 47.32 l 20 -34.64 l 20 34.64 M 10 30 h 40" stroke-width="3" />
+    </g>
+    <g id="OMA_S_magis__false_aether">
+        <path d="M 12 30 A 18 5 0 0 0 48 30 A 18 10 0 0 0 12 30 Z M 25 30 A 5 5 0 0 0 35 30 A 5 5 0 0 0 25 30" stroke-width="3" />
     </g>
     <g id="OMA_SC_magnesia_bowl">
         <path d="M 17.5 10 c -2.5 9 2.5 17.5 12.5 17.5 s 15 -8.5 12.5 -17.5" stroke-width="3" />
@@ -223,6 +239,9 @@
     </g>
     <g id="OMA_S_pax__uncommon_primes">
         <use href="#OMA_S_bellum__uncommon_primes" transform="rotate(180, 30, 30)" />
+    </g>
+    <g id="OMA_S_phasmus__false_aether">
+        <path d="M 44.2 21.4 A 18 10.4 0 0 1 15.8 21.4 A 14.2 9.5 0 0 0 44.2 21.4 Z M 34.05 30.67 A 5 5 90 0 0 33.62 25.17 M 26.38 25.17 A 5 5 90 0 0 25.95 30.67 M 30 31.07 V 50 M 38 40.53 H 27" stroke-width="3"/>
     </g>
     <g id="OMA_S_phlogiston__prima_cyclia">
         <circle cx="30" cy="15" r="5" stroke-width="3" />
@@ -318,6 +337,9 @@
     <g id="OMA_S_tin__opus_magnum">
         <path d="M 35 10 v 40 M 45 35 h -30 M 19 35 c 14 0 10 -21 0 -10" stroke-width="3" />
     </g>
+    <g id="OMA_S_turpis__false_aether">
+        <path d="M 12 30 A 18 20 0 0 0 48 30 A 18 20 0 0 0 12 30 M 13.12 23.05 A 19 11 0 0 0 46.88 23.05 M 47.75 26.67 A 18 10 0 0 1 12.25 26.67 M 25.81 34.73 A 5 5 0 0 1 26.18 28.78 M 33.82 28.78 A 5 5 0 0 1 34.19 34.73" stroke-width="3">
+    </g>
     <g id="OMA_S_true_fixus__uncommon_primes">
         <use href="#OMA_S_true_muto__uncommon_primes" transform="rotate(180, 30, 30)" />
     </g>
@@ -362,7 +384,7 @@
         <path d="M 21.29 25 q -10 15 5 20 l 5 -10 5 10 q 15 -10 -5 -30" stroke-width="3" />
     </g>
     <g id="OMA_S_yttrium__alchemical_inversions">
-        <path d="M 20 45 l 10 -30 l 10 30 M 50 20 a 30 30 0 0 1 -40 0 a 20 20 0 0 0 40 0 a 30 30 0 0 1 -40 0" stroke-width="3" />
+        <path d="M 20 45 l 10 -30 l 10 30 M 50 20 a 30 30 0 0 1 -40 0 a 20 20 0 0 0 40 0 Z" stroke-width="3" />
     </g>
     <g id="OMA_S_zephiron__neuvolics">
         <path d="M 30 29 a 9.5 9.5 0 0 0 0 -19 a 9.5 9.5 0 0 0 0 19 V 50 M 22 40.5 h 16 M 16.5 28 a 17 17 0 0 0 27 0" stroke-width="3" />
