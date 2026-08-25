@@ -12,6 +12,16 @@
         <path d="M 14.91 44.52 C 23.94 41.84 22.51 47.94 26.11 51.86 S 26.8 57.59 22.94 55.41 S 11.24 45.77 14.91 44.58" fill="var(--OMA-BC-chromium-red--metal-quintessence)" />
         <path d="M 8.41 41.48 C 7.48 35.14 10.19 28.35 13.86 24.68 S 20.41 26.04 19.13 31.06 S 17.92 39.87 16.66 43.67 S 8.97 47.58 8.47 41.55" fill="var(--OMA-BC-chromium-red-orange--metal-quintessence)" />
     </g>
+    <g id="OMA_B_erepiessence__false_aether">
+        <circle cx="24" cy="42" r="12" fill="var(--OMA-BC-erepiessence-cyan--false-aether)" />
+        <circle cx="42" cy="42" r="9" fill="var(--OMA-BC-erepiessence-pink--false-aether)" />
+        <circle cx="30" cy="33" r="12" fill="var(--OMA-BC-erepiessence-purple--false-aether)" />
+        <circle cx="33" cy="42" r="9" fill="var(--OMA-BC-erepiessence-yellow--false-aether)" />
+    </g>
+    <g id="OMA_B_ether__false_aether">
+        <path d="M 7 32.5 a 22.5 22.5 0 0 0 45 0 a 25 25 0 0 0 -45 0" fill="var(--OMA-BC-ether-black--false-aether)" />
+        <path d="M 10 30 Q 21 28 15 37 L 26 52 M 20 23 A 5 5 0 0 0 24 27.9 L 43.6 31.9 Q 44.58 32.1 47.6 27.9 M 36.55 22.79 L 31.87 51.5 M 19.26 43.04 L 33.52 41.58" fill="none" stroke="var(--OMA-BC-ether-blue--false-aether)" stroke-width="3" />
+    </g>
     <g id="OMA_B_horton__fanolytics">
         <circle cx="25" cy="11" r="1" fill="var(--OMA-BC-horton-star--fanolytics)" />
         <circle cx="35" cy="14" r="1" fill="var(--OMA-BC-horton-star--fanolytics)" />

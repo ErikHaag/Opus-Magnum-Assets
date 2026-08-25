@@ -35,13 +35,26 @@
     --OMA-B-ichor--extransmutations: #511;
 
     --OMA-B-aegero--false-aether: #005;
+    --OMA-B-body--false-aether: #635;
     --OMA-B-capax--false-aether: #bbb;
+    --OMA-B-celest--false-aether: #855;
     --OMA-B-daedrum--false-aether: #444;
+    --OMA-B-erepiessence--false-aether: #aaa;
+    --OMA-BC-erepiessence-cyan--false-aether: #abc;
+    --OMA-BC-erepiessence-yellow--false-aether: #edd;
+    --OMA-BC-erepiessence-pink--false-aether: #dab;
+    --OMA-BC-erepiessence-purple--false-aether: #edf;
+    --OMA-B-ether--false-aether: #aab;
+    --OMA-BC-ether-black--false-aether: #000;
+    --OMA-BC-ether-blue--false-aether: #7bf;
     --OMA-B-illustra--false-aether: #acc;
     --OMA-B-inops--false-aether: #333;
     --OMA-B-magis--false-aether: #eaa;
+    --OMA-B-mind--false-aether: #650;
     --OMA-B-phasmus--false-aether: #880;
+    --OMA-B-soul--false-aether: #9c9;
     --OMA-B-turpis--false-aether: #886;
+    --OMA-B-void--false-aether: #740;
 
 
     --OMA-B-carium--fanolytics: #116;
@@ -123,6 +136,7 @@
     --OMA-B-lux--uncommon-primes: #ed4;
     --OMA-B-obscurum--uncommon-primes: #79d;
     --OMA-B-pax--uncommon-primes: #077;
+    --OMA-B-arsenic--uncommon-primes: #775;
     --OMA-B-zinc--uncommon-primes: #686;
     --OMA-B-nickel--uncommon-primes: #858;
     --OMA-B-bismuth--uncommon-primes: #69b;

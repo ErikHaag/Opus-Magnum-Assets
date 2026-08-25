@@ -47,6 +47,9 @@
     <g id="OMA_S_antimony__prima_materia">
         <path d="M 30 27.5 a 10 10 0 0 0 0 20 a 10 10 0 0 0 0 -20 v -15 M 23 20 h 14" stroke-width="3" />
     </g>
+    <g id="OMA_S_arsenic__uncommon_primes">
+        <path d="M 15 10 H 45 L 30 40 Z M 15 50 L 30 20 L 45 50" stroke-width="3"/>
+    </g>
     <g id="OMA_S_azulum__neuvolics">
         <path d="M 18 50 l 3 -7 M 23.4 37.4 l 6.6 -15.4 l 12 28 M 40.41 38.15 a 16 16 0 1 0 -5.63 3.12" stroke-width="3" />
     </g>
@@ -69,6 +72,10 @@
         <path d="M 13 20 q 5 15 35 15" stroke-width="3" />
         <use href="#OMA_SC_vaca_star" transform="translate(39, 42)" />
     </g>
+    <g id="OMA_S_body__false_aether">
+        <use href="#OMA_S_mind__false_aether" />
+        <line x1="30" x2="30" y1="10" y2="50" stroke-width="3" />
+    </g>
     <g id="OMA_S_calcite__true_salt">
         <path d="M 12 30 a 18 20 0 0 0 36 0 a 18 20 0 0 0 -36 0 M 12.3 26.52 h 35.4 M 12.3 33.48 h 35.4" stroke-width="3" />
     </g>
@@ -78,6 +85,9 @@
     </g>
     <g id="OMA_S_carium__fanolytics">
         <path d="M 12.68 40 l 17.32 -30 l 17.32 30 M 30 10 v 30" stroke-width="3" />
+    </g>
+    <g id="OMA_S_celest__false_aether">
+        <path d="M 30 12.32 L 47.68 30 L 30 47.68 L 12.32 30 Z V 47.68 M 12.32 30 H 47.68" stroke-width="3" />
     </g>
     <g id="OMA_S_chromium__metal_quintessence">
         <path d="M 15 27 a 10 10 0 1 1 10 10 M 21 37 h 19 M 35 16 q 3 -3 5 -3 t 5 3 M 40 13 v 38 M 36 47 h 8" stroke-width="3" />
@@ -100,6 +110,13 @@
     </g>
     <g id="OMA_S_earth__opus_magnum" class="nudge-down">
         <use href="#OMA_S_air__opus_magnum" transform="rotate(180, 30, 30)" />
+    </g>
+    <g id="OMA_S_erepiessence__false_aether">
+        <use href="#OMA_S_mind__false_aether" />
+        <path d="M 24.82 17.5 L 30 12.32 L 35.18 17.5 M 42.5 24.82 L 47.68 30 L 42.5 35.18 M 35.18 42.5 L 30 47.68 L 24.82 42.5 M 17.5 35.18 L 12.32 30 L 17.5 24.82" stroke-width="3" />
+    </g>
+    <g id="OMA_S_ether__false_aether">
+        <path d="M 17.5 30 l 12.5 -20 l 12.5 20 l -12.5 20 Z l 12.5 5 l 12.5 -5 m 0 0 l -12.5 -5 l -12.5 5" stroke-width="3" />
     </g>
     <g id="OMA_S_fano__fanolytics">
         <path d="M 30 10 v 30 M 12.68 40 l 25.98 -15 M 47.32 40 l -25.98 -15" stroke-width="3" />
@@ -191,6 +208,10 @@
     <g id="OMA_S_magnesia__prima_materia">
         <use href="#OMA_SC_magnesia_bowl" />
         <path d="M 30 27.5 v 22.5 M 17 35 h 26 M 20 42.5 h 20" stroke-width="3" />
+    </g>
+    <g id="OMA_S_mind__false_aether">
+        <path d="M 17.5 17.5 H 42.5 V 42.5 H 17.5 Z" stroke-width="3" />
+        <circle cx="30" cy="30" r="10.5" stroke-width="3" />
     </g>
     <g id="OMA_S_mistaline__complicated_elements" class="nudge-down">
         <use href="#OMA_S_water__opus_magnum" />
@@ -308,6 +329,10 @@
     <g id="OMA_S_silver__opus_magnum">
         <path d="M 15.86 15.86 a 20 20 0 1 1 0 28.28 M 44.14 15.86 v 28.28" stroke-width="3" />
     </g>
+    <g id="OMA_S_soul__false_aether">
+        <use href="#OMA_S_void__false_aether" />
+        <line x1="30" x2="30" y1="10" y2="50" stroke-width="3" />
+    </g>
     <g id="OMA_S_sublime_vitae__magnus_animismus">
         <use href="#OMA_S_true_vitae__true_animismus" />
         <line x1="10" y1="41.25" x2="50" y2="41.25" stroke-width="3" />
@@ -373,6 +398,9 @@
     <g id="OMA_S_vitae__opus_magnum">
         <use href="#OMA_SC_animismus_triangle" />
         <path d="M 30 32.5 v 17.5 M 23 41.25 h 14" stroke-width="3" />
+    </g>
+    <g id="OMA_S_void__false_aether">
+        <use href="#OMA_S_mind__false_aether" transform="rotate(45, 30, 30)" />
     </g>
     <g id="OMA_S_vulcan__halving_metallurgy">
         <path d="M 27.02 10.84 L 49.16 32.98 L 39.67 42.47 L 17.53 20.33 Z M 12.14 47.86 L 28.51 31.49 M 38.09 21.91 L 43.39 16.61" stroke-width="3" />
