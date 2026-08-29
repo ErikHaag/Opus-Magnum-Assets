@@ -56,7 +56,6 @@
     --OMA-B-turpis--false-aether: #886;
     --OMA-B-void--false-aether: #740;
 
-
     --OMA-B-carium--fanolytics: #116;
     --OMA-B-coxeter--fanolytics: #86b;
     --OMA-B-fano--fanolytics: #c48;
@@ -117,13 +116,19 @@
     --OMA-BC-opalescence-earth--prima-materia: hsl(from var(--OMA-B-earth--opus-magnum) h s calc(l * 1.5));
     --OMA-BC-opalescence-fire--prima-materia: hsl(from var(--OMA-B-fire--opus-magnum) h s calc(l * 1.5));
     --OMA-BC-opalescence-water--prima-materia: hsl(from var(--OMA-B-water--opus-magnum) h s calc(l * 1.5));
-    --OMA-B-phosphorus--prima-materia: #ae7;
+    --OMA-B-phosphor--prima-materia: #ae7;
     --OMA-B-potash--prima-materia: #d64;
     --OMA-B-quicklime--prima-materia: #d95;
     --OMA-B-sulfur--prima-materia: #dd8;
     --OMA-B-primae--prima-materia: #000;
     --OMA-BC-primae-purple--prima-materia: #a3a;
 
+    --OMA-B-eitros--sennmetals: #a22;
+    --OMA-B-rofor--sennmetals: #b90;
+    --OMA-B-serket--sennmetals: #a2a;
+    --OMA-B-sordi--sennmetals: #35a;
+    --OMA-B-typhor--sennmetals: #499;
+    
     --OMA-B-grey-mors--true-animismus: #555;
     --OMA-B-red-vitae--true-animismus: #faa;
     --OMA-B-true-mors--true-animismus: #310;
