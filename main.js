@@ -1,5 +1,5 @@
-import { expandAtomSymbols } from "./symbols/atomSymbolsExpand.js"
-import { expandAtomBases } from "./bases/atomBasesExpand.js";
+import { loadAtomSymbols, unpackAtomSymbols } from "./symbols/atomSymbolsExpand.js"
+import { loadAtomBases, unpackAtomBases } from "./bases/atomBasesExpand.js";
 import { atomMerge } from "./combining/atomMerge.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     let baseDestination = document.getElementById("bases");
     let atomDestination = document.getElementById("atoms");
 
-    await expandAtomSymbols(symbolsDestination, { location: "./symbols/templates.svg", allowOutlines: true, mode: 2 });
+    await loadAtomSymbols(symbolsDestination, { location: "./symbols/templates.svg" });
+    unpackAtomSymbols(symbolsDestination, { allowOutlines: true, mode: 2 });
 
-    await expandAtomBases(baseDestination, { location: "./bases/templates.svg", mode: 0 });
+    await loadAtomBases(baseDestination, { location: "./bases/templates.svg" });
+    unpackAtomBases(baseDestination, { mode: 0 });
 
     atomMerge(atomDestination, symbolsDestination, baseDestination, { mode: 1 });
 
@@ -17,14 +19,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     let i = 0n;
     let j = 0n;
     let filter = [];
-
+    let counter = 0n;
     for (let elem of atomDestination.children) {
         if (filter.length) {
             let s = false;
             for (let f of filter) {
                 if (elem.id.includes(f)) {
                     s = true;
-                    break;    
+                    break;
                 }
             }
             if (!s) {
@@ -41,7 +43,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             i = 0n;
             j++;
         }
+        counter++;
     }
     symbolsDestination.parentElement.setAttribute("width", 70n * (j == 0n ? i + 1n : 10n));
     symbolsDestination.parentElement.setAttribute("height", 70n * (j + 1n));
+    console.log(`Found ${counter} atoms.`);
 });

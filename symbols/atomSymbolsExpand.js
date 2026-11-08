@@ -1,11 +1,22 @@
-export { expandAtomSymbols, colorToHex };
+export { loadAtomSymbols, unpackAtomSymbols, colorToHex };
+
+/**
+ * @typedef {object} LoadAtomSymbolsOptions
+ * @prop {string=} location
+ * 
+ * @typedef {object} UnpackAtomSymbolsOptions
+ * @prop {0|1|2|3=} mode
+ * @prop {string=} symbolClass
+ * @prop {string=} outlineClass
+ * @prop {boolean=} allowOutlines
+ */
 
 /**
  * Populates an element with all the atom symbols from Opus Magnum and most of the mods
- * @param {Element} destinationElement 
- * @param {Object} options 
+ * @param {SVGElement} destinationElement 
+ * @param {LoadAtomSymbolsOptions} options 
  */
-async function expandAtomSymbols(destinationElement, options = {}) {
+async function loadAtomSymbols(destinationElement, options = {}) {
     let error = "";
     if (!(destinationElement instanceof Element)) {
         error += "Destination must be an element.\n";
@@ -16,6 +27,201 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         error += "location must be a string or nullish.\n";
     }
 
+    if (error.length != 0) {
+        throw new Error(error.trimEnd());
+    }
+
+    const response = await fetch(symbolsURL);
+    const xml = await response.text();
+    let data = xml.substring(xml.indexOf("<g"), xml.lastIndexOf("</g>"));
+    data = data.replaceAll("\n", "").replaceAll("\r", "");
+    let elementStack = [destinationElement];
+    let writingProperties = false;
+    let counter = data.length;
+    const unmatchedQuoteError = new Error("Unmatched quotes.");
+
+    o: while (counter > 0) {
+        counter--;
+        data = data.trimStart();
+        if (data.length == 0) {
+            break;
+        }
+        let peeked = elementStack.at(-1);
+        if (peeked == undefined) {
+            throw new Error("This is in principle unreachable... the heck?");
+        }
+        let elemType = peeked.tagName.toLowerCase();
+        if (!writingProperties) {
+            for (let tag of ["ellipse", "circle", "g", "line", "path", "use"]) {
+                if (data.startsWith("<" + tag)) {
+                    data = data.substring(tag.length + 1);
+                    let elem = document.createElementNS("http://www.w3.org/2000/svg", tag);
+                    if (["ellipse", "circle", "line", "path"].includes(tag)) {
+                        elem.setAttribute("stroke-width", 3);
+                    }
+                    peeked.appendChild(elem);
+                    elementStack.push(elem);
+                    writingProperties = true
+                    continue o;
+                }
+            }
+            if (data.startsWith("</g>")) {
+                data = data.substring(4);
+                elementStack.pop();
+                continue;
+            }
+            throw new Error(`During tag reading, found unknown token: ${data.substring(0, 20)}`);
+        }
+        if (elemType == "circle") {
+            if (data.startsWith("r=\"")) {
+                let rEnd = data.indexOf("\"", 3);
+                if (rEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("r", data.substring(3, rEnd));
+                data = data.substring(rEnd + 1);
+                continue;
+            }
+        }
+        if (elemType == "g") {
+            if (data.startsWith("id=\"")) {
+                let idEnd = data.indexOf("\"", 4);
+                if (idEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                let id = data.substring(4, idEnd);
+                if (!/^OMA_S(?:C|_[a-z]+(?:_[a-z]+)*_)_[a-z]+(?:_[a-z]+)*$/.test(id)) {
+                    throw new Error(`Invalid id: ${id}`);
+                }
+                peeked.id = id;
+                data = data.substring(idEnd + 1);
+                continue;
+            }
+            if (data.startsWith(">")) {
+                writingProperties = false;
+                data = data.substring(1);
+                continue;
+            }
+        }
+        if (elemType == "line") {
+            for (let coord of ["x1", "x2", "y1", "y2"]) {
+                if (data.startsWith(coord + "=\"")) {
+                    let coordEnd = data.indexOf("\"", 4);
+                    if (coordEnd == -1) {
+                        throw unmatchedQuoteError;
+                    }
+                    peeked.setAttribute(coord, data.substring(4, coordEnd));
+                    data = data.substring(coordEnd + 1);
+                    continue o;
+                }
+            }
+        }
+        if (elemType == "path") {
+            if (data.startsWith("d=\"")) {
+                let dEnd = data.indexOf("\"", 3);
+                if (dEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("d", data.substring(3, dEnd));
+                data = data.substring(dEnd + 1);
+                continue;
+            }
+            if (data.startsWith("stroke-linecap=\"")) {
+                let strokeLinecapEnd = data.indexOf("\"", 16);
+                if (strokeLinecapEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("stroke-miterlimit", data.substring(16, strokeLinecapEnd));
+                data = data.substring(strokeLinecapEnd + 1);
+                continue;
+            }
+            if (data.startsWith("stroke-miterlimit=\"")) {
+                let strokeMiterlimitEnd = data.indexOf("\"", 19);
+                if (strokeMiterlimitEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("stroke-miterlimit", data.substring(19, strokeMiterlimitEnd));
+                data = data.substring(strokeMiterlimitEnd + 1);
+                continue;
+            }
+        }
+        if (elemType == "use") {
+            if (data.startsWith("href=\"")) {
+                let hrefEnd = data.indexOf("\"", 7);
+                if (hrefEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                let href = data.substring(6, hrefEnd);
+                if (!/^#OMA_S(?:C|_[a-z]+(?:_[a-z]+)*_)_[a-z]+(?:_[a-z]+)*$/.test(href)) {
+                    throw new Error(`Invalid reference: ${href}`);
+                }
+                peeked.setAttribute("href", href);
+                data = data.substring(hrefEnd + 1);
+                continue;
+            }
+            if (data.startsWith("transform=\"")) {
+                let transformEnd = data.indexOf("\"", 11);
+                if (transformEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("transform", data.substring(11, transformEnd));
+                data = data.substring(transformEnd + 1);
+                continue;
+            }
+        }
+        if (["circle", "ellipse"].includes(elemType)) {
+            for (let coord of ["cx", "cy"]) {
+                if (data.startsWith(coord + "=\"")) {
+                    let coordEnd = data.indexOf("\"", 4);
+                    if (coordEnd == -1) {
+                        throw unmatchedQuoteError;
+                    }
+                    peeked.setAttribute(coord, data.substring(4, coordEnd));
+                    data = data.substring(coordEnd + 1);
+                    continue o;
+                }
+            }
+        }
+        if (["circle", "ellipse", "line", "path"].includes(elemType)) {
+            if (data.startsWith("stroke-width=\"")) {
+                let strokeWidthEnd = data.indexOf("\"", 14);
+                if (strokeWidthEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("stroke-width", data.substring(14, strokeWidthEnd));
+                data = data.substring(strokeWidthEnd + 1);
+                continue;
+            }
+        }
+        if (["circle", "g", "path"].includes(elemType)) {
+            if (data.startsWith("class=\"")) {
+                let classEnd = data.indexOf("\"", 7);
+                if (classEnd == -1) {
+                    throw unmatchedQuoteError;
+                }
+                peeked.setAttribute("class", data.substring(7, classEnd));
+                data = data.substring(classEnd + 1);
+                continue;
+            }
+        }
+        if (["circle", "line", "path", "use"].includes(elemType) && data.startsWith("/>")) {
+            writingProperties = false;
+            data = data.substring(2);
+            elementStack.pop();
+            continue;
+        }
+        throw new Error(`During property reading of a ${elemType} element, found unknown token: ${data.substring(0, 20)}`);
+    }
+}
+
+
+/**
+ * Simplifies and tidies up the symbols loaded.
+ * @param {SVGElement} targetElement
+ * @param {UnpackAtomSymbolsOptions} options
+ */
+function unpackAtomSymbols(targetElement, options) {
+    let error = "";
     // 0 | no post-processing
     // 1 | expand use element and discard sub-components
     // 2 | color symbols using CSS variables.
@@ -33,7 +239,7 @@ async function expandAtomSymbols(destinationElement, options = {}) {
     let outlineClass = options.outlineClass ?? "OMA-SO";
     if (typeof (outlineClass) != "string") {
         error += "outlineClass must be a string or nullish.\n";
-    } 
+    }
 
     if (typeof (symbolClass) == "string" && typeof (outlineClass) != "string" && symbolClass === outlineClass) {
         error += "symbolClass and outlineClass must be different.\n"
@@ -48,15 +254,15 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         throw new Error(error.trimEnd());
     }
 
-    const response = await fetch(symbolsURL);
-    const xml = await response.text();
-    let data = /(<g[\s\S]+<\/g>)/.exec(xml)?.[1] ?? "";
-    destinationElement.innerHTML = data;
+    for (let elem of targetElement.querySelectorAll(":scope .noStroke")) {
+        elem.setAttribute("stroke", "none");
+        elem.setAttribute("stroke-width", "0");
+    }
+
     if (mode >= 1) {
         let useElem;
-        while (useElem = destinationElement.querySelector(":scope use")) {
-            let parent = useElem.parentElement;
-            let reference = destinationElement.querySelector(":scope " + useElem.getAttribute("href"));
+        while (useElem = targetElement.querySelector(":scope use")) {
+            let reference = targetElement.querySelector(":scope " + useElem.getAttribute("href"));
             let T = useElem.getAttribute("transform") ?? "";
             for (let c of reference.children) {
                 let cClone = c.cloneNode();
@@ -69,8 +275,8 @@ async function expandAtomSymbols(destinationElement, options = {}) {
             useElem.remove();
         }
 
-        for (let i = destinationElement.childElementCount - 1; i >= 0; i--) {
-            let elem = destinationElement.children[i];
+        for (let i = targetElement.childElementCount - 1; i >= 0; i--) {
+            let elem = targetElement.children[i];
             if (elem.id.startsWith("OMA_SC_")) {
                 elem.remove();
                 i--;
@@ -84,14 +290,12 @@ async function expandAtomSymbols(destinationElement, options = {}) {
                     cClone.classList.add(outlineClass);
                     fragment.appendChild(cClone);
                 }
-
-
                 elem.prepend(fragment);
             }
 
         }
     }
-    
+
     let styles;
     let strokeStyles;
     let outlineStyles;
@@ -100,11 +304,11 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         strokeStyles = styles.filter((s) => s.startsWith("--OMA-S-") && s != "--OMA-S-default-color").map((s) => s.substring(8));
         outlineStyles = styles.filter((s) => s.startsWith("--OMA-SO-") && s != "--OMA-SO-default-color").map((s) => s.substring(9));
         let disk = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        destinationElement.append(disk);
-        for (let atom of destinationElement.children) {
+        targetElement.append(disk);
+        for (let atom of targetElement.children) {
             let id = atom.id.substring(6).replaceAll("_", "-");
             let baseColor = "var(--OMA-S-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
-            let outlineColor = "var(--OMA-SO-" + (strokeStyles.includes(id) ? id : "default-color") + ")";
+            let outlineColor = "var(--OMA-SO-" + (outlineStyles.includes(id) ? id : "default-color") + ")";
             if (mode >= 3) {
                 disk.style.fill = baseColor;
                 baseColor = colorToHex(window.getComputedStyle(disk).fill);
@@ -126,7 +330,7 @@ async function expandAtomSymbols(destinationElement, options = {}) {
         }
         disk.remove();
     }
-    for (let elem of destinationElement.children) {
+    for (let elem of targetElement.children) {
         if (elem.id.startsWith("OMA_S_")) {
             elem.classList.add(symbolClass);
         }
